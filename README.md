@@ -24,4 +24,4 @@ Wszystkie, na których mieliście WA/RTE/MEM.
 
 Automatyczne testowanie zadań
 -----------------------------
-Kiedyś będzie
+Kiedyś będzie. Na razie dla zadań z C++ pewną funkcjonalność zapewnia skrypt test.sh, wymaga on jednak żeby plik z rozwiązaniem miał taką nazwę, jak kod testu i znajdował się w tym samym katalogu, co testy.
