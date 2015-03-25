@@ -1,0 +1,34 @@
+ERROR
+ERROR
+000000000 nowak
+000667890 kowalski
+123456789 kowalski
+220123456 bednarski
+321000000 iglinski
+000000001
+ERROR
+YES bednarski
+NO
+YES nowak
+YES iglinski
+4
+0
+1
+1
+2
+000000000 nowak
+321000000 iglinski
+ERROR
+OK
+OK
+ERROR
+123456789 kowalski
+ERROR
+ERROR
+000667890 kowalski
+123456789 kowalski
+220123456 bednarski
+000000000
+YES kowalski
+YES bednarski
+NO
