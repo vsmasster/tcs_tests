@@ -7,7 +7,7 @@ Stwierdziłem, że skoro i tak wszyscy robimy te same zadania, to możemy też d
 
 Prawa dostępu
 -------------
-Żeby móc commitować do repo napiszcie do mnie maila (michal.glapa@gmail.com) z waszym emailem githubowym.
+Żeby móc commitować do repo napiszcie do mnie maila (michal.glapa@gmail.com) z waszym githubowym loginem.
 
 Organizacja
 -----------
