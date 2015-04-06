@@ -84,4 +84,45 @@ public class FreakListAdapterTest {
         }
         catch (IsEmpty e) {}
     }
+    
+    @Test
+    public void randomErrorTest() throws Exception{
+        FreakList<Integer> fl = new FreakList<Integer>() {
+            int counter = 0;
+            @Override
+            public Integer pop() throws AccessDenied, WasWrong, IsEmpty {
+                switch(++counter) {
+                    case 1 :
+                    	return 1;
+                    case 2 :
+                    	throw new WasWrong();
+                    case 3 :
+                    	return 2;
+                    case 4:
+                    	throw new IsEmpty();
+                    case 5 :
+                    	throw new WasWrong();
+                    case 6:
+                    	return 3;
+                    default:
+                        throw new IsEmpty();
+                }
+            }
+        };
+        FreakListAdapter<Integer> f = new FreakListAdapter<Integer>(fl);
+        List<Integer> expectedResults = Arrays.asList(2,1,3);
+        for(Integer i : expectedResults) {
+            try {
+                assertEquals(i, f.pop());
+            }
+            catch (IsEmpty e) {
+                fail();
+            }
+        }
+        try {
+            f.pop();
+            fail();
+        }
+        catch (IsEmpty e) {}
+    }
 }
